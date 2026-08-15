@@ -4,3 +4,9 @@ matplotlib
 python-dotenv
 aisuite
 tabulate
+aisuite[mcp]
+requests
+qrcode
+transformers
+torch
+accelerate
