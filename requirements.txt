@@ -7,6 +7,11 @@ tabulate
 aisuite[mcp]
 requests
 qrcode
-transformers
-torch
-accelerate
+tavily
+wikipedia
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic[email]
+jinja2
+python-multipart
