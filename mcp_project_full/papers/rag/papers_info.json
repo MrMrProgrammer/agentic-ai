@@ -1,0 +1,68 @@
+{
+  "2511.22858v1": {
+    "title": "RAG System for Supporting Japanese Litigation Procedures: Faithful Response Generation Complying with Legal Norms",
+    "authors": [
+      "Yuya Ishihara",
+      "Atsushi Keyaki",
+      "Hiroaki Yamada",
+      "Ryutaro Ohara",
+      "Mihoko Sumida"
+    ],
+    "summary": "This study discusses the essential components that a Retrieval-Augmented Generation (RAG)-based LLM system should possess in order to support Japanese medical litigation procedures complying with legal norms. In litigation, expert commissioners, such as physicians, architects, accountants, and engineers, provide specialized knowledge to help judges clarify points of dispute. When considering the substitution of these expert roles with a RAG-based LLM system, the constraint of strict adherence to legal norms is imposed. Specifically, three requirements arise: (1) the retrieval module must retrieve appropriate external knowledge relevant to the disputed issues in accordance with the principle prohibiting the use of private knowledge, (2) the responses generated must originate from the context provided by the RAG and remain faithful to that context, and (3) the retrieval module must reference external knowledge with appropriate timestamps corresponding to the issues at hand. This paper discusses the design of a RAG-based LLM system that satisfies these requirements.",
+    "pdf_url": "https://arxiv.org/pdf/2511.22858v1",
+    "published": "2025-11-28"
+  },
+  "2401.15391v1": {
+    "title": "MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop Queries",
+    "authors": [
+      "Yixuan Tang",
+      "Yi Yang"
+    ],
+    "summary": "Retrieval-augmented generation (RAG) augments large language models (LLM) by retrieving relevant knowledge, showing promising potential in mitigating LLM hallucinations and enhancing response quality, thereby facilitating the great adoption of LLMs in practice. However, we find that existing RAG systems are inadequate in answering multi-hop queries, which require retrieving and reasoning over multiple pieces of supporting evidence. Furthermore, to our knowledge, no existing RAG benchmarking dataset focuses on multi-hop queries. In this paper, we develop a novel dataset, MultiHop-RAG, which consists of a knowledge base, a large collection of multi-hop queries, their ground-truth answers, and the associated supporting evidence. We detail the procedure of building the dataset, utilizing an English news article dataset as the underlying RAG knowledge base. We demonstrate the benchmarking utility of MultiHop-RAG in two experiments. The first experiment compares different embedding models for retrieving evidence for multi-hop queries. In the second experiment, we examine the capabilities of various state-of-the-art LLMs, including GPT-4, PaLM, and Llama2-70B, in reasoning and answering multi-hop queries given the evidence. Both experiments reveal that existing RAG methods perform unsatisfactorily in retrieving and answering multi-hop queries. We hope MultiHop-RAG will be a valuable resource for the community in developing effective RAG systems, thereby facilitating greater adoption of LLMs in practice. The MultiHop-RAG and implemented RAG system is publicly available at https://github.com/yixuantt/MultiHop-RAG/.",
+    "pdf_url": "https://arxiv.org/pdf/2401.15391v1",
+    "published": "2024-01-27"
+  },
+  "2412.12881v1": {
+    "title": "RAG-Star: Enhancing Deliberative Reasoning with Retrieval Augmented Verification and Refinement",
+    "authors": [
+      "Jinhao Jiang",
+      "Jiayi Chen",
+      "Junyi Li",
+      "Ruiyang Ren",
+      "Shijie Wang",
+      "Wayne Xin Zhao",
+      "Yang Song",
+      "Tao Zhang"
+    ],
+    "summary": "Existing large language models (LLMs) show exceptional problem-solving capabilities but might struggle with complex reasoning tasks. Despite the successes of chain-of-thought and tree-based search methods, they mainly depend on the internal knowledge of LLMs to search over intermediate reasoning steps, limited to dealing with simple tasks involving fewer reasoning steps. In this paper, we propose \\textbf{RAG-Star}, a novel RAG approach that integrates the retrieved information to guide the tree-based deliberative reasoning process that relies on the inherent knowledge of LLMs. By leveraging Monte Carlo Tree Search, RAG-Star iteratively plans intermediate sub-queries and answers for reasoning based on the LLM itself. To consolidate internal and external knowledge, we propose an retrieval-augmented verification that utilizes query- and answer-aware reward modeling to provide feedback for the inherent reasoning of LLMs. Our experiments involving Llama-3.1-8B-Instruct and GPT-4o demonstrate that RAG-Star significantly outperforms previous RAG and reasoning methods.",
+    "pdf_url": "https://arxiv.org/pdf/2412.12881v1",
+    "published": "2024-12-17"
+  },
+  "2402.07483v2": {
+    "title": "T-RAG: Lessons from the LLM Trenches",
+    "authors": [
+      "Masoomali Fatehkia",
+      "Ji Kim Lucas",
+      "Sanjay Chawla"
+    ],
+    "summary": "Large Language Models (LLM) have shown remarkable language capabilities fueling attempts to integrate them into applications across a wide range of domains. An important application area is question answering over private enterprise documents where the main considerations are data security, which necessitates applications that can be deployed on-prem, limited computational resources and the need for a robust application that correctly responds to queries. Retrieval-Augmented Generation (RAG) has emerged as the most prominent framework for building LLM-based applications. While building a RAG is relatively straightforward, making it robust and a reliable application requires extensive customization and relatively deep knowledge of the application domain. We share our experiences building and deploying an LLM application for question answering over private organizational documents. Our application combines the use of RAG with a finetuned open-source LLM. Additionally, our system, which we call Tree-RAG (T-RAG), uses a tree structure to represent entity hierarchies within the organization. This is used to generate a textual description to augment the context when responding to user queries pertaining to entities within the organization's hierarchy. Our evaluations, including a Needle in a Haystack test, show that this combination performs better than a simple RAG or finetuning implementation. Finally, we share some lessons learned based on our experiences building an LLM application for real-world use.",
+    "pdf_url": "https://arxiv.org/pdf/2402.07483v2",
+    "published": "2024-02-12"
+  },
+  "2504.01346v4": {
+    "title": "RAG over Tables: Hierarchical Memory Index, Multi-Stage Retrieval, and Benchmarking",
+    "authors": [
+      "Jiaru Zou",
+      "Dongqi Fu",
+      "Sirui Chen",
+      "Xinrui He",
+      "Zihao Li",
+      "Yada Zhu",
+      "Jiawei Han",
+      "Jingrui He"
+    ],
+    "summary": "Retrieval-Augmented Generation (RAG) enhances Large Language Models (LLMs) by integrating them with an external knowledge base to improve the answer relevance and accuracy. In real-world scenarios, beyond pure text, a substantial amount of knowledge is stored in tables, and user questions often require retrieving answers that are distributed across multiple tables. Retrieving knowledge from a table corpora (i.e., various individual tables) for a question remains nascent, at least, for (i) how to understand intra- and inter-table knowledge effectively, (ii) how to filter unnecessary tables and how to retrieve the most relevant tables efficiently, (iii) how to prompt LLMs to infer over the retrieval, (iv) how to evaluate the corresponding performance in a realistic setting. Facing the above challenges, in this paper, we first propose a table-corpora-aware RAG framework, named T-RAG, which consists of the hierarchical memory index, multi-stage retrieval, and graph-aware prompting for effective and efficient table knowledge retrieval and inference. Further, we first develop a multi-table question answering benchmark named MultiTableQA, which spans 3 different task types, 57,193 tables, and 23,758 questions in total, and the sources are all from real-world scenarios. Based on MultiTableQA, we did the holistic comparison over table retrieval methods, RAG methods, and table-to-graph representation learning methods, where T-RAG shows the leading accuracy, recall, and running time performance. Also, under T-RAG, we evaluate the inference ability upgrade of different LLMs. Code and Data are available at https://github.com/jiaruzouu/T-RAG",
+    "pdf_url": "https://arxiv.org/pdf/2504.01346v4",
+    "published": "2025-04-02"
+  }
+}

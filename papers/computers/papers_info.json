@@ -1,0 +1,61 @@
+{
+  "1312.3300v1": {
+    "title": "Numerical Reproducibility and Parallel Computations: Issues for Interval Algorithms",
+    "authors": [
+      "Nathalie Revol",
+      "Philippe Th\u00e9veny"
+    ],
+    "summary": "What is called \"numerical reproducibility\" is the problem of getting the same result when the scientific computation is run several times, either on the same machine or on different machines, with different types and numbers of processing units, execution environments, computational loads etc. This problem is especially stringent for HPC numerical simulations. In what follows, the focus is on parallel implementations of interval arithmetic using floating-point arithmetic. For interval computations, numerical reproducibility is of course an issue for testing and debugging purposes. However, as long as the computed result encloses the exact and unknown result, the inclusion property, which is the main property of interval arithmetic, is satisfied and getting bit for bit identical results may not be crucial. Still, implementation issues may invalidate the inclusion property. Several ways to preserve the inclusion property are presented, on the example of the product of matrices with interval coefficients.",
+    "pdf_url": "https://arxiv.org/pdf/1312.3300v1",
+    "published": "2013-12-11"
+  },
+  "2207.05241v1": {
+    "title": "Accelerating Large-Scale Graph-based Nearest Neighbor Search on a Computational Storage Platform",
+    "authors": [
+      "Ji-Hoon Kim",
+      "Yeo-Reum Park",
+      "Jaeyoung Do",
+      "Soo-Young Ji",
+      "Joo-Young Kim"
+    ],
+    "summary": "K-nearest neighbor search is one of the fundamental tasks in various applications and the hierarchical navigable small world (HNSW) has recently drawn attention in large-scale cloud services, as it easily scales up the database while offering fast search. On the other hand, a computational storage device (CSD) that combines programmable logic and storage modules on a single board becomes popular to address the data bandwidth bottleneck of modern computing systems. In this paper, we propose a computational storage platform that can accelerate a large-scale graph-based nearest neighbor search algorithm based on SmartSSD CSD. To this end, we modify the algorithm more amenable on the hardware and implement two types of accelerators using HLS- and RTL-based methodology with various optimization methods. In addition, we scale up the proposed platform to have 4 SmartSSDs and apply graph parallelism to boost the system performance further. As a result, the proposed computational storage platform achieves 75.59 query per second throughput for the SIFT1B dataset at 258.66W power dissipation, which is 12.83x and 17.91x faster and 10.43x and 24.33x more energy efficient than the conventional CPU-based and GPU-based server platform, respectively. With multi-terabyte storage and custom acceleration capability, we believe that the proposed computational storage platform is a promising solution for cost-sensitive cloud datacenters.",
+    "pdf_url": "https://arxiv.org/pdf/2207.05241v1",
+    "published": "2022-07-12"
+  },
+  "2603.19778v1": {
+    "title": "Uniform Maximum Projection Designs for Computer Experiments",
+    "authors": [
+      "Miroslav Vo\u0159echovsk\u00fd",
+      "Jan Ma\u0161ek"
+    ],
+    "summary": "Space-filling experimental designs are widely used in engineering computer experiments, where only a limited number of expensive model evaluations can be afforded. Distance-based designs such as Maximin or Minimax ensure global space-filling, while Latin hypercube sampling enforces uniform one-dimensional projections, yet neither guarantees uniformity in lowdimensional subspaces. Maximum Projection (MaxPro) designs were introduced to improve uniformity in low-dimensional subspaces, yet their original formulation relies on the Euclidean distance and may induce systematic density distortions in bounded domains. We demonstrate that the standard MaxPro criterion leads to statistically non-uniform sampling, resulting in undersampling of corner regions and biased Monte Carlo estimates.\n  To remedy this issue, we introduce a periodic variant of the criterion, termed Uniform Maximum Projection (uMaxPro), in which the Euclidean metric is replaced by a periodic distance based on the minimum image convention. The proposed uMaxPro designs preserve the projection-aware structure of MaxPro while achieving statistical uniformity of the design-generation mechanism. Numerical experiments show unbiased Monte Carlo integration with reduced variance, excellent subspace projection performance, and competitive discrepancy properties. The methodology is further validated on benchmark engineering problems, including a meso-scale finite element model of concrete, demonstrating improved accuracy in surrogate modeling and probabilistic estimation.\n  The resulting criterion provides a simple and computationally efficient modification of MaxPro that enhances its robustness for nonadaptive computer experiments. The construction algorithm, open-source implementation, and reproducible optimized designs are provided to facilitate practical adoption of the method.",
+    "pdf_url": "https://arxiv.org/pdf/2603.19778v1",
+    "published": "2026-03-20"
+  },
+  "2601.11095v1": {
+    "title": "Towards Quantum-Resistant Trusted Computing: Architectures for Post-Quantum Integrity Verification Techniques",
+    "authors": [
+      "Grazia D'Onghia",
+      "Antonio Lioy"
+    ],
+    "summary": "Trust is the core building block of secure systems, and it is enforced through methods to ensure that a specific system is properly configured and works as expected. In this context, a Root of Trust (RoT) establishes a trusted environment, where both data and code are authenticated via a digital signature based on asymmetric cryptography, which is vulnerable to the threat posed by Quantum Computers (QCs). Firmware, being the first layer of trusted software, faces unique risks due to its longevity and difficult update. The transition of firmware protection to Post-Quantum Cryptography (PQC) is urgent, since it reduces the risk derived from exposing all computing and network devices to quantum-based attacks. This paper offers an analysis of the most common trust techniques and their roadmap towards a Post-Quantum (PQ) world, by investigating the current status of PQC and the challenges posed by such algorithms in existing Trusted Computing (TC) solutions from an integration perspective. Furthermore, this paper proposes an architecture for TC techniques enhanced with PEC, addressing the imperative for immediate adoption of quantum-resistant algorithms.",
+    "pdf_url": "https://arxiv.org/pdf/2601.11095v1",
+    "published": "2026-01-16"
+  },
+  "2012.10468v1": {
+    "title": "A Comprehensive Utility Function for Resource Allocation in Mobile Edge Computing",
+    "authors": [
+      "Zaiwar Ali",
+      "Sadia Khaf",
+      "Ziaul Haq Abba",
+      "Ghulam Abbas",
+      "Lei Jiao",
+      "Amna Irshad",
+      "Kyung Sup Kwak",
+      "Muhammad Bilal"
+    ],
+    "summary": "In mobile edge computing (MEC), one of the important challenges is how much resources of which mobile edge server (MES) should be allocated to which user equipment (UE). The existing resource allocation schemes only consider CPU as the requested resource and assume utility for MESs as either a random variable or dependent on the requested CPU only. This paper presents a novel comprehensive utility function for resource allocation in MEC. The utility function considers the heterogeneous nature of applications that a UE offloads to MES. The proposed utility function considers all important parameters, including CPU, RAM, hard disk space, required time, and distance, to calculate a more realistic utility value for MESs. Moreover, we improve upon some general algorithms, used for resource allocation in MEC and cloud computing, by considering our proposed utility function. We name the improved versions of these resource allocation schemes as comprehensive resource allocation schemes. The UE requests are modeled to represent the amount of resources requested by the UE as well as the time for which the UE has requested these resources. The utility function depends upon the UE requests and the distance between UEs and MES, and serves as a realistic means of comparison between different types of UE requests. Choosing (or selecting) an optimal MES with the optimal amount of resources to be allocated to each UE request is a challenging task. We show that MES resource allocation is sub-optimal if CPU is the only resource considered. By taking into account the other resources, i.e., RAM, disk space, request time, and distance in the utility function, we demonstrate improvement in the resource allocation algorithms in terms of service rate, utility, and MES energy consumption.",
+    "pdf_url": "https://arxiv.org/pdf/2012.10468v1",
+    "published": "2020-12-18"
+  }
+}
